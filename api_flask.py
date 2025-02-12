@@ -13,6 +13,15 @@ from datetime import datetime, date
 import os
 from fastapi.responses import HTMLResponse
 from functools import lru_cache
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Or set a specific list of allowed origins
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
  
 # Configure logging
 logging.basicConfig(level=logging.INFO)
