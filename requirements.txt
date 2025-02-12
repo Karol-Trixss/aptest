@@ -1,0 +1,6 @@
+fastapi
+pydantic
+pyodbc
+tqdm
+pandas
+uvicorn
